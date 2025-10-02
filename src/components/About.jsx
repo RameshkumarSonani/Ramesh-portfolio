@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaPython, FaReact, FaDatabase, FaGithub } from "react-icons/fa";
 import { SiDjango, SiTailwindcss, SiSqlite } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -48,12 +49,12 @@ export default function About() {
               >
                 Download Resume
               </a>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="px-6 py-3 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-900 transition"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
