@@ -25,7 +25,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-6 text0ont-medium">
+        <ul className="hidden md:flex items-center gap-6 text-medium">
           <li className="hover:text-yellow-300 transition">
             <Link to="/">Home</Link>
           </li>
