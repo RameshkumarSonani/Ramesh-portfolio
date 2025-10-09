@@ -120,7 +120,7 @@ export default function AfterHeroSection() {
 
         {/* Projects Section */}
         <hr className="my-0 h-1 bg-gradient-to-r from-yellow-500 via-black to-green-500 border-0 rounded-full" />
-        <section className="bg-gradient-to-b from-cyan-300 via-white to-pink-200 text-gray-900 mx-auto py-20 px-6 rounded-2xl">
+        <section className="bg-gradient-to-b from-cyan-300 via-white to-pink-200 text-gray-900  mx-auto py-20 px-6 rounded-2xl">
           <motion.h2
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}

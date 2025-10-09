@@ -1,7 +1,9 @@
-// tailwind.config.js
 export default {
-  darkMode: "class", // ✅ important
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // ye zaroor hona chahiye
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },

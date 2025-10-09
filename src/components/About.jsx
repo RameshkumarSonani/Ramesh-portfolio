@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <div className="bg-gradient-to-b from-indigo-50 via-white to-blue-50 text-gray-900 min-h-screen py-16 px-6">
+    <div className="bg-gradient-to-b from-indigo-50 via-white to-blue-50 text-gray-900  min-h-screen py-16 px-6">
       <div className="container mx-auto">
         {/* Heading */}
         <motion.h1

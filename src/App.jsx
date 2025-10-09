@@ -14,9 +14,11 @@ export default function App() {
 
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add("dark");   // ✅ <html> pe lag raha hai
+      document.documentElement.classList.add("dark"); 
+      console.log("🌙 Dark mode ON");  // ✅ <html> pe lag raha hai
     } else {
       document.documentElement.classList.remove("dark");
+      console.log("☀️ Light mode ON");
     }
   }, [darkMode]);
 
