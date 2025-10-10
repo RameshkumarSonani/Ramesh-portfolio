@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaPython, FaReact, FaGithub, FaDatabase } from "react-icons/fa";
 import { SiDjango, SiTailwindcss, SiSqlite } from "react-icons/si";
+import { useNavigate , Link } from "react-router-dom";
 
 export default function AfterHeroSection() {
   const projects = [
@@ -30,6 +31,7 @@ export default function AfterHeroSection() {
     },
   ];
 
+  const navigate = useNavigate();
   return (
     <>
       <hr className="my-0 h-1 bg-gradient-to-r from-yellow-500 via-black to-green-500 border-0 rounded-full" />
@@ -158,6 +160,16 @@ export default function AfterHeroSection() {
               </motion.div>
             ))}
           </div>
+          <div className="text-center mt-12">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/projects")}
+              className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-500 text-white rounded-lg shadow-lg hover:from-indigo-700 hover:to-blue-600 transition font-semibold"
+            >
+              View More
+            </motion.button>
+          </div>
         </section>
 
         {/* Certificates Section */}
@@ -208,35 +220,57 @@ export default function AfterHeroSection() {
 
         {/* Contact Section */}
         <hr className="my-0 h-1 bg-gradient-to-r from-yellow-500 via-black to-green-500 border-0 rounded-full" />
-        <section className="container bg-gradient-to-b from-green-300 via-purple-100 to-yellow-100 text-gray-900    rounded-2xl mx-auto py-20 px-6 mt-1">
+
+        <section className="container bg-gradient-to-b from-green-300 via-purple-100 to-yellow-100 text-gray-900 rounded-2xl mx-auto py-20 px-6 mt-1">
           <motion.h2
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl font-bold text-center mb-12"
+            className="text-4xl font-bold text-center mb-8"
           >
             Contact Me
           </motion.h2>
-          <form className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow space-y-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-            <textarea
-              rows="5"
-              placeholder="Your Message"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-            <button className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-              Send Message
-            </button>
-          </form>
+
+          {/* 🧠 Why Contact Me Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-3xl mx-auto text-center mb-12"
+          >
+            <p className="text-lg leading-relaxed text-gray-800">
+              Looking for someone who can bring your ideas to life with clean
+              code and modern design? I specialize in building{" "}
+              <span className="font-semibold text-blue-600">
+                responsive web applications
+              </span>{" "}
+              using{" "}
+              <span className="text-green-600 font-semibold">
+                React.js, Django,
+              </span>{" "}
+              and{" "}
+              <span className="text-purple-600 font-semibold">
+                Tailwind CSS
+              </span>
+              . Whether you need a new project, portfolio, or business website —
+              I can help you make it happen! You can also explore my{" "}
+              <Link
+                to="/projects"
+                className="text-blue-700 font-bold hover:underline hover:text-blue-900 transition"
+              >
+                Projects
+              </Link>{" "}
+              to see what I’ve built so far.
+            </p>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/contact")}
+              className="mt-6 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-500 text-white rounded-lg shadow-lg hover:from-indigo-700 hover:to-blue-600 transition font-semibold"
+            >
+              Hire Me
+            </motion.button>
+          </motion.div>
         </section>
       </div>
     </>
