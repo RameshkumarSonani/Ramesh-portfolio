@@ -23,7 +23,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-2xl md:text-3xl font-semibold mb-8"
         >
-          A Passionate Full Stack Web Developer 
+          A Passionate Full Stack Developer 
         </motion.h2>
 
         {/* Skill Badges */}

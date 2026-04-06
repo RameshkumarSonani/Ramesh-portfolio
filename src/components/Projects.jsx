@@ -14,7 +14,7 @@ const carouselProjects = [
       title: "Portfolio Website",
       desc: "Personal portfolio built with React, Tailwind, and Django backend.",
       img: "/Projects/portfolio.png",
-      demo: "https://yourdemo.com/portfolio",
+      demo: "https://ramesh-portfolio-chi.vercel.app/",
       github: "https://github.com/yourrepo/portfolio",
     },
     {
@@ -81,9 +81,9 @@ function Projects() {
               }`}
             >
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                {project.image && (
+                {project.img && (
                   <img
-                    src={project.image}
+                    src={project.img}
                     alt={project.title}
                     className="w-full h-60 object-cover"
                   />
@@ -114,7 +114,7 @@ function Projects() {
         </div>
       </div>
 
-      {/* 📦 Small Projects Section */}
+      {/* 📦 Small Projects Section
       <div>
         <h2 className="text-3xl font-bold text-center mb-8">Other Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -153,7 +153,7 @@ function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
