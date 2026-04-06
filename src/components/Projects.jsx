@@ -1,30 +1,30 @@
 import { useEffect, useState } from "react";
 
 const carouselProjects = [
-  {
-    id: 1,
-    title: "Project 1",
-    description: "This is a cool project about AI Assistant.",
-    image: "/images/project1.png",
-    demo: "https://your-demo-link1.com",
-    github: "https://github.com/username/project1",
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    description: "A portfolio website built with React and Django.",
-    image: "/images/project2.png",
-    demo: "https://your-demo-link2.com",
-    github: "https://github.com/username/project2",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "Career counseling platform with AI skill assessment.",
-    image: "/images/project3.png",
-    demo: "https://your-demo-link3.com",
-    github: "https://github.com/username/project3",
-  },
+{
+      id: 1,
+      title: "Career Counseling Platform",
+      desc: "AI-based career guidance platform with resume parsing.",
+      img: "/Projects/careercounselingplatform1.png",
+      demo: "https://yourdemo.com/career",
+      github: "https://github.com/yourrepo/career",
+    },
+    {
+      id: 2,
+      title: "Portfolio Website",
+      desc: "Personal portfolio built with React, Tailwind, and Django backend.",
+      img: "/Projects/portfolio.png",
+      demo: "https://yourdemo.com/portfolio",
+      github: "https://github.com/yourrepo/portfolio",
+    },
+    {
+      id: 3,
+      title: "E-Commerce Store",
+      desc: "Full-stack e-commerce application with cart and payment integration.",
+      img: "/Projects/2.png",
+      demo: "https://techy-store-beta.vercel.app/",
+      github: "https://github.com/RameshkumarSonani/TechyStore",
+    },
 ];
 
 const normalProjects = [

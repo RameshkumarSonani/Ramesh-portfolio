@@ -12,7 +12,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-extrabold mb-6"
+          className="text-xl md:text-6xl font-semibold mb-6"
         >
           Hi, I am <span className="text-yellow-300">Ramesh Kumar</span>
         </motion.h1>
@@ -23,7 +23,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-2xl md:text-3xl font-semibold mb-8"
         >
-          A Passionate Full Stack Web Developer 🚀
+          A Passionate Full Stack Web Developer 
         </motion.h2>
 
         {/* Skill Badges */}

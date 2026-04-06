@@ -25,9 +25,9 @@ export default function AfterHeroSection() {
       id: 3,
       title: "E-Commerce Store",
       desc: "Full-stack e-commerce application with cart and payment integration.",
-      img: "/Projects/careercounselingplatform1.png",
-      demo: "https://yourdemo.com/ecommerce",
-      github: "https://github.com/yourrepo/ecommerce",
+      img: "/Projects/2.png",
+      demo: "https://techy-store-beta.vercel.app/",
+      github: "https://github.com/RameshkumarSonani/TechyStore",
     },
   ];
 
